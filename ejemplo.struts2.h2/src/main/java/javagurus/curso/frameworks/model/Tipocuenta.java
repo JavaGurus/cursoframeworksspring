@@ -12,8 +12,7 @@ import java.util.Set;
 public class Tipocuenta implements java.io.Serializable {
 
 	private BigDecimal idtipocuenta;
-	private String nombre;
-	private Set cuentas = new HashSet(0);
+	private String nombre;	
 
 	public Tipocuenta() {
 	}
@@ -21,12 +20,6 @@ public class Tipocuenta implements java.io.Serializable {
 	public Tipocuenta(BigDecimal idtipocuenta, String nombre) {
 		this.idtipocuenta = idtipocuenta;
 		this.nombre = nombre;
-	}
-
-	public Tipocuenta(BigDecimal idtipocuenta, String nombre, Set cuentas) {
-		this.idtipocuenta = idtipocuenta;
-		this.nombre = nombre;
-		this.cuentas = cuentas;
 	}
 
 	public BigDecimal getIdtipocuenta() {
@@ -43,14 +36,6 @@ public class Tipocuenta implements java.io.Serializable {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-
-	public Set getCuentas() {
-		return this.cuentas;
-	}
-
-	public void setCuentas(Set cuentas) {
-		this.cuentas = cuentas;
 	}
 
 }

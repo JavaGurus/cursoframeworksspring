@@ -10,12 +10,6 @@
         </id>
         <property name="nombre" type="string">
             <column name="NOMBRE" length="20" not-null="true" />
-        </property>
-        <set name="cuentas" table="CUENTA" inverse="true" lazy="true" fetch="select">
-            <key>
-                <column name="IDTIPOCUENTA" precision="38" scale="0" not-null="true" />
-            </key>
-            <one-to-many class="javagurus.curso.frameworks.model.Cuenta" />
-        </set>
+        </property>        
     </class>
 </hibernate-mapping>

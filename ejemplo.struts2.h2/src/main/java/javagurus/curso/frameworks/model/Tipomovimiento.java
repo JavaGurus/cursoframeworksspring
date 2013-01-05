@@ -13,7 +13,6 @@ public class Tipomovimiento implements java.io.Serializable {
 
 	private BigDecimal idtipomovimiento;
 	private String nombre;
-	private Set movimientos = new HashSet(0);
 
 	public Tipomovimiento() {
 	}
@@ -27,7 +26,6 @@ public class Tipomovimiento implements java.io.Serializable {
 			Set movimientos) {
 		this.idtipomovimiento = idtipomovimiento;
 		this.nombre = nombre;
-		this.movimientos = movimientos;
 	}
 
 	public BigDecimal getIdtipomovimiento() {
@@ -44,14 +42,6 @@ public class Tipomovimiento implements java.io.Serializable {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-
-	public Set getMovimientos() {
-		return this.movimientos;
-	}
-
-	public void setMovimientos(Set movimientos) {
-		this.movimientos = movimientos;
 	}
 
 }

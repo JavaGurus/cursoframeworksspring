@@ -163,6 +163,14 @@ insert into cuenta values(5,5555,5,5);
 insert into cuenta values(6,6666,1,6);
 insert into cuenta values(7,7777,2,7);
 insert into cuenta values(8,8888,3,8);
+insert into cuenta values(9,1111,4,1);
+insert into cuenta values(10,2222,3,2);
+insert into cuenta values(11,3333,2,3);
+insert into cuenta values(12,4444,1,4);
+insert into cuenta values(13,5555,1,5);
+insert into cuenta values(14,6666,1,6);
+insert into cuenta values(15,7777,2,7);
+insert into cuenta values(16,8888,3,8);
 
 -- Movimientos
 INSERT INTO `MOVIMIENTO` (`IDMOVIMIENTO`,`FECHA`,`MONTO`,`IDCUENTA`,`IDTIPOMOVIMIENTO`) VALUES ('1','2011-11-12','8547','5','4');

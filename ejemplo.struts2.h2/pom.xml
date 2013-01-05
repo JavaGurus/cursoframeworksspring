@@ -10,7 +10,7 @@
 
 	<properties>
 		<struts2.version>2.3.7</struts2.version>
-		<!-- Versión del plugin de jQuery para Struts 2-->
+		<!-- Versión del plugin de jQuery para Struts 2 -->
 		<struts2.jepert>3.4.0</struts2.jepert>
 	</properties>
 
@@ -106,13 +106,13 @@
 			<version>2.6</version>
 		</dependency>
 
-		<!-- Dependencia básica-->
+		<!-- Dependencia básica -->
 		<dependency>
-  			<groupId>com.jgeppert.struts2.jquery</groupId>
+			<groupId>com.jgeppert.struts2.jquery</groupId>
 			<artifactId>struts2-jquery-plugin</artifactId>
 			<version>${struts2.jepert}</version>
 		</dependency>
-		<!-- Depedencia para ocupar grid-->
+		<!-- Depedencia para ocupar grid -->
 		<dependency>
 			<groupId>com.jgeppert.struts2.jquery</groupId>
 			<artifactId>struts2-jquery-grid-plugin</artifactId>
@@ -124,14 +124,44 @@
 			<artifactId>struts2-bootstrap-plugin</artifactId>
 			<version>1.5.2</version>
 		</dependency>
-		
+		<!-- Dependencia de rich text -->
+		<dependency>		
+			<groupId>com.jgeppert.struts2.jquery</groupId>
+			<artifactId>struts2-jquery-richtext-plugin</artifactId>
+			<version>${struts2.jepert}</version>
+		</dependency>
+		<!-- Dependencia de tree -->
+		<dependency>
+			<groupId>com.jgeppert.struts2.jquery</groupId>
+			<artifactId>struts2-jquery-tree-plugin</artifactId>
+			<version>${struts2.jepert}</version>
+		</dependency>
+		<!-- Dependencia de jquery mobile -->
+		<dependency>
+			<groupId>com.jgeppert.struts2.jquery</groupId>
+			<artifactId>struts2-jquery-mobile-plugin</artifactId>
+			<version>${struts2.jepert}</version>
+		</dependency>
 		<!-- Dependencia para manejar respuestas en JSON -->
-    		<dependency>
-  			<groupId>org.apache.struts</groupId>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-json-plugin</artifactId>
 			<version>${struts2.version}</version>
 		</dependency>
 
+		<!-- Dependencias de spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.apache.struts</groupId> <artifactId>struts2-spring-plugin</artifactId> 
+			<version>${struts2.version}</version> </dependency> -->
 
 	</dependencies>
 

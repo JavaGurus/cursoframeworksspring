@@ -1,13 +1,15 @@
 package javagurus.curso.frameworks.controllers;
 
+import java.util.List;
+
 import javagurus.curso.frameworks.dao.BancoDAO;
+import javagurus.curso.frameworks.dao.BancoDAO2;
 import javagurus.curso.frameworks.model.Banco;
 
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.ParentPackage;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
-import java.util.List;
 
 
 @ParentPackage(value="struts-default")
@@ -23,7 +25,7 @@ public class BancoAction {
 	public List<Banco> listaDeBancos;
 	
 	
-	private BancoDAO bancoDao = new BancoDAO();
+	private BancoDAO2 bancoDao = new BancoDAO2();
 	
 	public String execute(){
 		return "SUCCESS";

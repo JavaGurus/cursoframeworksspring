@@ -6,13 +6,30 @@
   <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
   <constant name="struts.devMode" value="true"/>
   <constant name="struts.convention.action.packages" value="javagurus.curso.frameworks.controllers"/>
-  <constant name="struts.action.excludePattern" value="/dbconsole/*"/>
-  
+  <constant name="struts.action.excludePattern" value="/dbconsole/*" />
+
   <package name="ejemplosjquery" extends="struts-default,json-default"
 		namespace="/">
-	</package>
-  
-  <include file="example.xml"/>
+  </package>
+
+  <package name="jsonactions" extends="json-default" namespace="/">
+		<action name="consultarClientes" class="javagurus.curso.frameworks.controllers.ConsultarClientesAction">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="listaBancos" class="javagurus.curso.frameworks.controllers.BancoListAction">
+			<result name="success">listaBancos.jsp</result>
+		</action>
+
+		<action name="guardarCliente" class="javagurus.curso.frameworks.controllers.GuardarClienteAction">
+			<result name="success">listaBancos.jsp</result>
+		</action>
+
+		<action name="consultaCuentas" class="javagurus.curso.frameworks.controllers.ConsultaCuentasAction">
+			<result name="success" type="json"></result>
+		</action>
+  </package>
+
+  <include file="example.xml" />
   
   <!-- Add addition packages and configuration here. -->
 </struts>

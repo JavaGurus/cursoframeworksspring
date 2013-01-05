@@ -9,8 +9,6 @@
 <title>Ejemplos jQuery Struts</title>
 </head>
 <body>
-
-
 	<s:url var="urlajax1" action="ajax1" />
 	<s:url var="urlajax4" action="ajax4" />
 
@@ -109,10 +107,15 @@
 		<sj:datepicker id="time6" label="With Grid" timepicker="true"
 			timepickerOnly="true" timepickerGridHour="4"
 			timepickerGridMinute="10" timepickerStepMinute="10" />
+			
+		<s:url var="listaTiposCuenta" action="listaTiposCuenta" />
+		<sj:select href="%{listaTiposCuenta}" id="tiposCuenta" name="tipoDeCuenta"
+		list="estados" listKey="idtipocuenta" listValue="nombre"
+		emptyOption="false" headerKey="-1" headerValue="Seleccione un tipo"
+		label="Estado" />
 
 	</s:form>
         
-        
-
+       
 </body>
 </html>

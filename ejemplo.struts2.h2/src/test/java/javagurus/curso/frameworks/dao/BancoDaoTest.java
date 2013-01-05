@@ -10,7 +10,7 @@ import javagurus.curso.frameworks.model.Banco;
 import org.junit.Test;
 
 public class BancoDaoTest {
-	private BancoDAO bancoDAO = new BancoDAO();
+	private BancoDAO2 bancoDAO = new BancoDAO2();
 	//@Test
 	public void testInsertar() {
 		Banco banco = new Banco();
